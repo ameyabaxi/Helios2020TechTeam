@@ -1,4 +1,5 @@
 import Moment from "moment";
+// make sure to include extension (i.e. ".jpg") in imgUrl
 
 const solarData = [
   {
@@ -6,7 +7,7 @@ const solarData = [
     title: "This is Project :) (smile)",
     date: new Moment("2019-10-31"),
     team: '',
-    imgUrl: "sun",
+    imgUrl: "sun.jpg",
     summary:
       "This is a test summary for the Project.",
     body:
@@ -93,7 +94,7 @@ const solarData = [
     title: "Helios Website",
     date: new Moment("2020-1-1"),
     team: 'Technology',
-    imgUrl: "React",
+    imgUrl: "React.jpg",
     summary:
       "A React.js website created over the course of two years involving programmers and non programmers of all skill levels.",
     body:

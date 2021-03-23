@@ -8,13 +8,13 @@ import "./ProjectDetails.scss";
 
 const ProjectDetails = ({ match }) => {
   const contents = data[match.params.id];
-  let image = contents.imgUrl === "" ? 'HeliosFull.png' : contents.imgUrl;
+  const imageName = contents.imgUrl === "" ? 'HeliosFull.png' : contents.imgUrl; // default details image is HeliosFull.png
   return (
     <Layout>
       <h1>{contents.title}</h1>
       <Grid container>
         <Box>
-          <img src={require('../../static/images/' + contents.imgUrl + '.jpg')} />
+          <img src={require('../../static/images/' + imageName)} />
         </Box>
         <Box>
           <p>
